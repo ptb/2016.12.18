@@ -203,9 +203,8 @@ const opts = new function () {
     "webpack": {
       "context": path.join(TMP, "js"),
       "entry": {
-        "index": "./index.js"
-
-        // "share": Object.keys(pkg.dependencies)
+        "index": "./index.js",
+        "share": Object.keys(pkg.dependencies)
       },
       "module": {
         "rules": [
