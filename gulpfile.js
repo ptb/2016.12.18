@@ -221,6 +221,7 @@ const opts = new function () {
         "filename": path.join("js", "[name].js")
       },
       "plugins": [
+        new plug.webpack.HotModuleReplacementPlugin(),
         new plug.webpack.SourceMapDevToolPlugin({
           "filename": path.join("js", "[name].map"),
           "moduleFilenameTemplate": function (info) {
