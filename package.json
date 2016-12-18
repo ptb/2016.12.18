@@ -62,7 +62,7 @@
   },
   "scripts": {
     "prestart": "bundle install 1> /dev/null && yarn install 1> /dev/null",
-    "start": "gulp --silent",
+    "start": "gulp",
     "build": "gulp --min --silent"
   },
   "version": "2016.12.18"
