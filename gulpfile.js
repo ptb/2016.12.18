@@ -144,7 +144,7 @@ const opts = new function () {
         "below": "</script>"
       },
       "license": "/*! github.com/ptb, @license Apache-2.0 */\n",
-      "riot": `const riot = require("./riot")${MIN ? ";" : "\n"}`
+      "riot": `const riot = require("riot")${MIN ? ";" : "\n"}`
     },
     "jsbeautifier": {
       "js": {
