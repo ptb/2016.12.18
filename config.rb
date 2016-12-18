@@ -31,7 +31,7 @@ end
 activate :directory_indexes
 
 activate :external_pipeline,
-  command: "node_modules/.bin/gulp build#{MIN ? ' --min' : nil} --silent --wpk",
+  command: "node_modules/.bin/gulp build#{MIN ? ' --min' : nil} --wpk",
   name: :gulp,
   source: '.tmp'
 
