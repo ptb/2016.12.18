@@ -606,6 +606,9 @@ gulp.task("default", gulp.series("check", function watch (done) {
       "key": "localhost.key"
     },
     "logConnections": true,
+    "middleware": [
+      plug.webpackHotMiddleware(opts.webpack)
+    ],
     "notify": false,
     "open": false,
     "reloadDebounce": 100,
