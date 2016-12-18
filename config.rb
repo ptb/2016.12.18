@@ -6,7 +6,7 @@ activate :blog do |blog|
 
   blog.sources = "{title}/index.#{EXT}"
   blog.default_extension = '.slim'
-  blog.summary_separator = /READMORE/
+  blog.summary_separator = /(READMORE)/
 
   # blog.layout = 'blog'
   blog.permalink = '{title}'
