@@ -607,6 +607,12 @@ gulp.task("default", gulp.series("check", function watch (done) {
     },
     "logConnections": true,
     "middleware": [
+      plug.webpackDevMiddleware(opts.webpack, {
+        "publicPath": OUT,
+        "stats": {
+          "colors": true
+        }
+      }),
       plug.webpackHotMiddleware(opts.webpack)
     ],
     "notify": false,
