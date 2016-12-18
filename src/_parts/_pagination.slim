@@ -1,0 +1,17 @@
+- if prev_pg || next_pg
+  nav.pages@navigation(aria-labelledby='pagination')
+    h3#pagination Page Navigation
+    div
+  - if prev_pg
+    span.prev>
+      a(href="#{prev_pg.url}" rel='prev')
+        = single ? prev_pg.title : 'Newer'
+  - if page_num && total_pg
+    span.page
+      = page_num
+      span &#160;of&#160;
+      = total_pg
+  - if next_pg
+    span.next<
+      a(href="#{next_pg.url}" rel='next')
+        = single ? next_pg.title : 'Older'

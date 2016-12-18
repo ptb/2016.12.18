@@ -1,0 +1,5 @@
+linters:
+  TagCase:
+    enabled: false
+
+skip_frontmatter: true

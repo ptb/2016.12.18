@@ -1,0 +1,5 @@
+#!/bin/sh
+if git ls-remote --exit-code github &> /dev/null; then
+  git push --all --set-upstream github
+  git push --tags --set-upstream github
+fi

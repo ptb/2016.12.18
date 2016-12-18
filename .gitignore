@@ -1,0 +1,71 @@
+# -*- mode: gitignore; -*-
+
+**/Library/Caches/
+**/Library/Saved\ Application\ State/
+
+# Chrome downloads
+*.crdownload
+
+# Safari downloads
+*.download/
+
+# curl downloads
+*.incomplete
+
+# Firefox or Transmission downloads
+*.part
+
+*.plist.*
+*.log
+*.swp
+*~
+*~.skp
+.\#*
+\#*\#
+
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.DS_Store
+.DocumentRevisions-V100/
+.LSOverride
+.MobileBackups/
+.Spotlight-V100/
+.TemporaryItems/
+.Trash/
+.Trashes/
+.VolumeIcon.icns
+._*
+.apdisk
+.bundle
+.checksums
+.dropbox/
+.dropbox.cache/
+.fseventsd/
+.sass-cache/
+.svn/
+
+node_modules/
+
+/Network/*
+/Previous Systems.localized/
+/Volumes/*
+/afs/*
+/automount/*
+/cores/*
+/dev/*
+/home/*
+/net/*
+
+/private/tmp/*
+/private/var/folders/*
+/private/var/run/*
+/private/var/spool/postfix/*
+/private/var/tmp/*
+/private/var/vm/*
+
+Icon
+Network\ Trash\ Folder/
+Temporary\ Items/
+
+!.keep

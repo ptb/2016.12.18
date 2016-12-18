@@ -1,0 +1,20 @@
+article.hentry%blogPost<>(itemscope itemtype='http://schema.org/BlogPosting')
+  header
+    - unless article.tags.empty?
+      ul.tags@navigation
+        - article.tags.each do |tag, articles|
+          li
+            a%keywords(href="#{tag_path tag}" rel='tag') = tag
+
+  h2.entry-title%headline
+    - if single
+      = article.title
+    - else
+      a.permalink%url(href="#{article.url}" rel='bookmark') = article.title
+
+  - if single
+    div.entry-content%articleBody
+      == content
+  - else
+    div.entry-summary%description
+      == content
