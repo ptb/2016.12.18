@@ -613,8 +613,7 @@ gulp.task("default", gulp.series("check", function watch (done) {
         "stats": {
           "colors": true
         }
-      }),
-      plug.webpackHotMiddleware(plug.webpack(opts.webpack))
+      })
     ],
     "notify": false,
     "open": false,
