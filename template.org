@@ -3695,6 +3695,8 @@ EOF
 *** TODO: Notes
 
 #+BEGIN_EXAMPLE
+https://github.com/rogueg/riot/raw/hot/lib/riot-hot-reload.js
+
 npm install --save-dev \
   connect-modrewrite \
   webpack-dev-middleware \
